@@ -76,7 +76,8 @@ class ZohoCRMQueryProcessor:
         - sort_order: asc or desc
         - page: Page number (default: 1)
         - per_page: Records per page (default: 200)
-        -output ONLY valid JSON with no additional text or punctuation marks like ``` or ```
+        - output ONLY valid JSON with no additional text or punctuation marks like ``` or ```
+        - Do not include any symbol e.g. ``` before or after json.
         """
 
         try:
