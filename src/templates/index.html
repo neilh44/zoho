@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoho CRM Natural Language Assistant</title>
+    <!-- React and ReactDOM -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Your component scripts -->
+    <script type="text/babel" src="src/components/ui/card.jsx"></script>
+    <script type="text/babel" src="src/components/ui/table.jsx"></script>
+    <script type="text/babel" src="src/components/zoho-crm/QuerySection.jsx"></script>
+    <script type="text/babel" src="src/components/zoho-crm/QueryDetails.jsx"></script>
+    <script type="text/babel" src="src/components/zoho-crm/ResultsTable.jsx"></script>
+    <script type="text/babel" src="src/components/zoho-crm/ZohoCRMInterface.jsx"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+        ReactDOM.render(
+            <ZohoCRMInterface />,
+            document.getElementById('root')
+        );
+    </script>
+</body>
+</html>
